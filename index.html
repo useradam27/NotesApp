@@ -2,6 +2,21 @@
 <html>
     <body>
         <h1>Here are your notes:</h1>
-        <button onclick="location.href = 'notes_form.html' ;">Create Note</button> 
+        <!--<button onclick="location.href = 'notes_form.html' ;">Create Note</button> -->
+
+        <div>
+            <h1>NEW NOTE</h1>
+            <form id="myForm">
+                <label for="title">Title of your note:</label>
+                <input type="text" id="title">
+                <input type='submit' value="submit">
+            </form>
+        </div>
+
+        <div class="my_notes">
+            <ul></ul>
+        </div>
+
+    <script src="notes.js"></script>
     </body>
 </html>
