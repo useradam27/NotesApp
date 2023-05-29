@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <body>
+    <head>
+        <link rel="stylesheet" href="index.css">
         <h1>Here are your notes:</h1>
-        <!--<button onclick="location.href = 'notes_form.html' ;">Create Note</button> -->
+    </head>
+    <body>
 
-        <div>
+        <div class="note_box">
+            <li class="add_box">
+                <div class="plus"><p>+</p></div>
+                <p>NEW NOTE</p>
+            </li>
+
+            <li class="note">
+                <div class="contents">
+                    <p>TITLE</p>
+                    <span>This is a test note.</span>
+                </div>
+            </li>
+
+            <li class="note">
+                <div class="contents">
+                    <p>TITLE</p>
+                    <span>This is a test note.</span>
+                </div>
+            </li>
+
+            <li class="note">
+                <div class="contents">
+                    <p>TITLE</p>
+                    <span>This is a test note.</span>
+                </div>
+            </li>
+        </div>
+
+        <div class = "note_form">
             <h1>NEW NOTE</h1>
             <form id="myForm">
                 <label for="title">Title of your note:</label>
