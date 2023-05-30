@@ -49,3 +49,8 @@ li {
     background: #ffffff;
 
 }
+
+.note_form {
+    position: fixed;
+    background: rgba(0,0,0,.4);
+}
