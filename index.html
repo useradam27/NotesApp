@@ -2,54 +2,19 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-        <h1>Here are your notes:</h1>
     </head>
     <body>
+        <div class="login">
+            <h1>Welcome to the Notes App!</h1>
+            <h2>Login</h2>
+            <h3>Enter your information:</h3>
+            <form class="form">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <a href="notes_app.html">Forgot password?</a>
 
-        <div class="note_box">
-            <li class="add_box">
-                <div class="plus"><p>+</p></div>
-                <p>NEW NOTE</p>
-            </li>
-
-            <li class="note">
-                <div class="contents">
-                    <p>TITLE</p>
-                    <span>This is a test note.</span>
-                </div>
-            </li>
-
-            <li class="note">
-                <div class="contents">
-                    <p>TITLE</p>
-                    <span>This is a test note.</span>
-                </div>
-            </li>
-
-            <li class="note">
-                <div class="contents">
-                    <p>TITLE</p>
-                    <span>This is a test note.</span>
-                </div>
-            </li>
-        </div>
-
-        <div class = "note_form">
-            <h1>NEW NOTE</h1>
-            <form id="myForm">
-                <label for="title">Title of your note:</label>
-                <input type="text" id="title">
-                <label for="note">Contents:</label>
-                <input type="text" id="note">
-                <input type='submit' value="submit">
             </form>
+            <button onclick="window.location.href = 'notes_app.html'" id="myButton">LOGIN</button> 
         </div>
-
-        <div class="my_notes">
-            <h1>Here are your notes: </h1>
-            <ul></ul>
-        </div>
-
-    <script src="notes.js"></script>
     </body>
 </html>
