@@ -52,5 +52,32 @@ li {
 
 .note_form {
     position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
     background: rgba(0,0,0,.4);
+}
+
+.form_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.new_note {
+    padding: 15px 20px 20px;
+    border-radius: 15px;
+    background: #ffffff;
+}
+
+.note_form, .note_form .new_note {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.note_form.show, .note_form.show .new_note {
+    opacity: 1;
+    pointer-events: auto;
 }

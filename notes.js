@@ -1,6 +1,19 @@
 var myNotes = [];
 document.getElementById("myForm").addEventListener("submit", myFunction);
 
+//puts note form in show mode when add box is clicked
+const add_box = document.querySelector(".add_box");
+note_form = document.querySelector(".note_form");
+close_form = document.querySelector(".close_button");
+
+add_box.addEventListener("click", () => {
+    note_form.classList.add("show");
+});
+
+close_form.addEventListener("click", () => {
+    note_form.classList.remove("show");
+});
+
 function myFunction(event) {
     //alert("submitted")
     event.preventDefault(); //prevents refresh
